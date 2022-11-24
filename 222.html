@@ -1,423 +1,442 @@
 <!DOCTYPE html>
 <html>
-    <head>
-		<meta charset="UTF-8">
 
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="UTF-8">
 
-  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-        <style>
-			
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-            
-			
-           .flier {
-	pointer-events: none;
-}
 
-.flier > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 50s linear infinite;
-        pointer-events: none !important;
-	top: 0;
-	left: 0;
-	transform: translateX(-120%) translateY(-120%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
-}
+	<style>
+		.flier {
+			pointer-events: none;
+		}
 
- /* Keyframe values control where the element will begin
+		.flier>* {
+			/* Adjust animation duration to change the element’s speed */
+			animation: fly 50s linear infinite;
+			pointer-events: none !important;
+			top: 0;
+			left: 0;
+			transform: translateX(-120%) translateY(-120%) rotateZ(0);
+			position: fixed;
+			animation-delay: 1s;
+			z-index: 999999;
+		}
+
+		/* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
 
 
-@keyframes fly {
+		@keyframes fly {
 
-	98.001%, 0% {
-                display: block;
-		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-	}
+			98.001%,
+			0% {
+				display: block;
+				transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+			}
 
-	15% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
+			15% {
+				transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+			}
 
-	15.001%, 18% {
-		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-	}
+			15.001%,
+			18% {
+				transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+			}
 
-	40% {
-		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-	}
+			40% {
+				transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+			}
 
-	40.001%, 43% {
-		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-	}
+			40.001%,
+			43% {
+				transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+			}
 
-	65% {
-		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-	}
+			65% {
+				transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+			}
 
-	65.001%, 68% {
-		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-	}
+			65.001%,
+			68% {
+				transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+			}
 
-	95% {
-		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-	}
-} 
-.flier2 > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 25s linear infinite;
-        pointer-events: none !important;
-	top: 200;
-	left: 50;
-	transform: translateX(-120%) translateY(-120%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
-}
+			95% {
+				transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+			}
+		}
 
- /* Keyframe values control where the element will begin
+		.flier2>* {
+			/* Adjust animation duration to change the element’s speed */
+			animation: fly 25s linear infinite;
+			pointer-events: none !important;
+			top: 200;
+			left: 50;
+			transform: translateX(-120%) translateY(-120%) rotateZ(0);
+			position: fixed;
+			animation-delay: 1s;
+			z-index: 999999;
+		}
+
+		/* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
 
 
-@keyframes fly {
+		@keyframes fly {
 
-	98.001%, 0% {
-                display: block;
-		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-	}
+			98.001%,
+			0% {
+				display: block;
+				transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+			}
 
-	10% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
+			10% {
+				transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+			}
 
-	20.001%, 18% {
-		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-	}
+			20.001%,
+			18% {
+				transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+			}
 
-	40% {
-		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-	}
+			40% {
+				transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+			}
 
-	50.001%, 43% {
-		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-	}
+			50.001%,
+			43% {
+				transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+			}
 
-	65% {
-		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-	}
+			65% {
+				transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+			}
 
-	55.001%, 68% {
-		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-	}
+			55.001%,
+			68% {
+				transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+			}
 
-	85% {
-		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-	}
-} 
-.flier3 > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 30s linear infinite;
-        pointer-events: none !important;
-	top: 100;
-	left: 500;
-	transform: translateX(-100%) translateY(50%) rotateZ(0);
-	position: fixed;
-	animation-delay: 5s;
-	z-index: 999999;
-}
+			85% {
+				transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+			}
+		}
 
- /* Keyframe values control where the element will begin
+		.flier3>* {
+			/* Adjust animation duration to change the element’s speed */
+			animation: fly 30s linear infinite;
+			pointer-events: none !important;
+			top: 100;
+			left: 500;
+			transform: translateX(-100%) translateY(50%) rotateZ(0);
+			position: fixed;
+			animation-delay: 5s;
+			z-index: 999999;
+		}
+
+		/* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
 
 
-@keyframes fly {
+		@keyframes fly {
 
-	98.001%, 0% {
-                display: block;
-		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-	}
+			98.001%,
+			0% {
+				display: block;
+				transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+			}
 
-	10% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
+			10% {
+				transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+			}
 
-	20.001%, 18% {
-		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-	}
+			20.001%,
+			18% {
+				transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+			}
 
-	40% {
-		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-	}
+			40% {
+				transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+			}
 
-	50.001%, 43% {
-		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-	}
+			50.001%,
+			43% {
+				transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+			}
 
-	65% {
-		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-	}
+			65% {
+				transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+			}
 
-	55.001%, 68% {
-		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-	}
+			55.001%,
+			68% {
+				transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+			}
 
-	85% {
-		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-	}
-} 
-.flier4 > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 125s linear infinite;
-        pointer-events: none !important;
-	top: 1200;
-	left: 250;
-	transform: translateX(-1520%) translateY(-220%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
-}
+			85% {
+				transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+			}
+		}
 
- /* Keyframe values control where the element will begin
+		.flier4>* {
+			/* Adjust animation duration to change the element’s speed */
+			animation: fly 125s linear infinite;
+			pointer-events: none !important;
+			top: 1200;
+			left: 250;
+			transform: translateX(-1520%) translateY(-220%) rotateZ(0);
+			position: fixed;
+			animation-delay: 1s;
+			z-index: 999999;
+		}
+
+		/* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
 
 
-@keyframes fly {
+		@keyframes fly {
 
-	98.001%, 0% {
-                display: block;
-		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-	}
+			98.001%,
+			0% {
+				display: block;
+				transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+			}
 
-	50% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
+			50% {
+				transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+			}
 
-	20.001%, 18% {
-		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-	}
+			20.001%,
+			18% {
+				transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+			}
 
-	70% {
-		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-	}
+			70% {
+				transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+			}
 
-	20.001%, 43% {
-		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-	}
+			20.001%,
+			43% {
+				transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+			}
 
-	65% {
-		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-	}
+			65% {
+				transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+			}
 
-	65.001%, 68% {
-		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-	}
+			65.001%,
+			68% {
+				transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+			}
 
-	95% {
-		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-	}
-} 
+			95% {
+				transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+			}
+		}
 
 
-		.one{
+		.one {
 			margin-top: 800px;
-		height: 20px;
-		width: 20px;
-     background-color: black;
-
-      
-     
-      cursor:pointer;
-
-			
-		}
-		.two{
 			height: 20px;
-		width: 20px;
-     background-color: black;
-      
-     
-      cursor:pointer;
+			width: 20px;
+			background-color: black;
+
+
+
+			cursor: pointer;
 
 
 		}
-		.three{
+
+		.two {
 			height: 20px;
-		width: 20px;
-     background-color: black;
-     
-      cursor:pointer;
+			width: 20px;
+			background-color: black;
+
+
+			cursor: pointer;
 
 
 		}
-		.four{
+
+		.three {
 			height: 20px;
-		width: 20px;
-     background-color: black;
-     
-     
-      cursor:pointer;
+			width: 20px;
+			background-color: black;
+
+			cursor: pointer;
+
 
 		}
 
+		.four {
+			height: 20px;
+			width: 20px;
+			background-color: black;
 
-        </style>
-    </head>
-    <body>
 
-        <div class="flier"><img width="714" height="714" width_o="714" height_o="714" src="IMG_1448.png" data-mid="48229679" border="0" /></div>
-        <div class="flier2"><img width="280" height="280" width_o="280" height_o="280" src="wangguan.png" data-mid="48229679" border="0" /></div>
-        <div class="flier3"><img width="250" height="250" width_o="250" height_o="250" src="shuizhu.png" data-mid="48229679" border="0" /></div>
-        <div class="flier4"><img width="300" height="300" width_o="300" height_o="300" src="hudiejie.png" data-mid="48229679" border="0" /></div>
-    
-		<p id="test"></p>
-		<center>
-		<button class="one" onclick="editinput()"></button>
-	
+			cursor: pointer;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="flier"><img width="714" height="714" width_o="714" height_o="714" src="IMG_1448.png" data-mid="48229679"
+			border="0" /></div>
+	<div class="flier2"><img width="280" height="280" width_o="280" height_o="280" src="wangguan.png"
+			data-mid="48229679" border="0" /></div>
+	<div class="flier3"><img width="250" height="250" width_o="250" height_o="250" src="shuizhu.png" data-mid="48229679"
+			border="0" /></div>
+	<div class="flier4"><img width="300" height="300" width_o="300" height_o="300" src="hudiejie.png"
+			data-mid="48229679" border="0" /></div>
+
+	<p id="test"></p>
+	<center>
+		<button class="one" onclick="editinput1()"></button>
+
 		<script>
-	  
-		  function editinput() {
-	  
-			document.getElementById("test").innerHTML='遗忘的速度和什么有关，只是与时间关联吗？会和场景相关联吗？可是遗忘的记忆又不会被新的记忆所覆盖，它轻轻消失，就留下几个记忆点留在记忆之中。遗忘应该是有形状的吧，它好像有些残忍的慢慢把印象淡化。遗忘本身可能会有一天被我们自己遗忘，等到那个时候，遗忘还是有意义的吗？还是本来就是无意义的。';
-	  
-		  }
-	  
+
+			function editinput1() {
+
+				document.getElementById("test").innerHTML = '遗忘的速度和什么有关，只是与时间关联吗？会和场景相关联吗？可是遗忘的记忆又不会被新的记忆所覆盖，它轻轻消失，就留下几个记忆点留在记忆之中。遗忘应该是有形状的吧，它好像有些残忍的慢慢把印象淡化。遗忘本身可能会有一天被我们自己遗忘，等到那个时候，遗忘还是有意义的吗？还是本来就是无意义的。';
+
+			}
+
 		</script>
 
+<button class="two" onclick="editinput2()"></button>
 
-<button class="two" onclick="editinput()"></button>
 
-	  
 <script>
 
-  function editinput() {
+	function editinput2() {
 
-	document.getElementById("test").innerHTML='记忆又和什么有关呢？应该会和嗅觉有关吧，不然我也不会容易想起某一场景。或许会和味觉相关吧，又或许和听觉有关吧。音调和气味的组合都会唤起一些察觉不到的印象，但又会慢慢遗忘。';
+		document.getElementById("test").innerHTML = '记忆又和什么有关呢？应该会和嗅觉有关吧，不然我也不会容易想起某一场景。或许会和味觉相关吧，又或许和听觉有关吧。音调和气味的组合都会唤起一些察觉不到的印象，但又会慢慢遗忘。';
 
-  }
+	}
 
 </script>
-<button class="three" onclick="editinput()"></button>
-	  
+<button class="three" onclick="editinput3()"></button>
+
 		<script>
-	  
-		  function editinput() {
-	  
-			document.getElementById("test").innerHTML='梦境似乎也是记忆的一部分，会总是梦到在手术室的场景，虽然从来没进去过，对哦，我好像已经很久没有梦到过这个梦了。';
-	  
-		  }
-		  </script>
-		  <button class="four" onclick="editinput()">123</button>
-		  
-			<script>
-		  
-			  function editinput() {
-		  
-				document.getElementById("test").innerHTML='网络好虚幻，什么都有不真实的感受。想去现实摸摸花，摸摸草，看看水。（隔离有感）';
-		  
-			  }
-	</script>	
-	<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='上周日我去了公园，很开心，但上周五我干了什么我记不太清了。';
-  
-	  }
 
-</script>	
-<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='有些事情好像忘记就好了，就结束了，但是你往往不会忘记，你甚至不能够做到忘记你要忘记这件事。';
-  
-	  }
-	  
-</script>	
-<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='我好像在收集别人在收集什么，我又好像从来没有开始收集。';
-  
-	  }
-	  
-</script>	
-<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='我好像没有办法忘记我自己那些去忘记的内容，忘记本身是难以忘记的，往往都是被多次提起的，那忘记是不是就是有意义的，还是忘记的内容更加有意义呢。';
-  
-	  }
-	  
-</script>	
+			function editinput3() {
 
-<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='之前有提到说理解是否有门槛，现在正在思考理解是不是需要我们自己再去思考，理解本身可能并没有被理解，就像你所理解的事物可能是你去理解别人对一事物理解过后的产物，而这本身和理解原意又是否相符呢？是不是理解就是反复的思考和提问得到你所认为正确的结果。那你所理解的东西会不会又会被你自己所怀疑呢？';
-  
-	  }
-	  
-</script>	
-<button class="four" onclick="editinput()">123</button>
-		  
-	<script>
-  
-	  function editinput() {
-  
-		document.getElementById("test").innerHTML='遗忘好像是无色的，不是没有颜色，而是无色透明的颜色。';
-  
-	  }
-	  
-</script>	
+				document.getElementById("test").innerHTML = '梦境似乎也是记忆的一部分，会总是梦到在手术室的场景，虽然从来没进去过，对哦，我好像已经很久没有梦到过这个梦了。';
 
-<br><brbr><br><br><br><br><br><br><br><br><br>
+			}
+		</script>
+		<button class="four" onclick="editinput4()"></button>
 
-<h1>纸船</h1>
-<p>           泰戈尔
-	<br><br>
-	我每天把纸船一个个放在急流的溪中。<br><br>
-	我用大黑字写我的名字和我住的村名在纸船上。<br><br>
-	我希望住在异地的人会得到这纸船，知道我是谁。<br><br>
-	我把园中长的秀丽花载在我的小船上，<br><br>
-	希望这些黎明开的花能在夜里被平平安安地带到岸上。<br><br>
-	我投我的纸船到水里，仰望天空，<br><br>
-	看见小朵的云正在张着满鼓着风的白帆。<br><br>
-	我不知道天上有我的什么游伴把这些船放下来同我的船比赛！<br><br>
-	夜来了，我的脸埋在手臂里，<br><br>
-	梦见我的船在子夜的星光下缓缓地浮泛前去。<br><br>
-	睡仙坐在船里，带着满载着梦的篮子。</p>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</center>
+<script>
 
-	</body>
+			function editinput4() {
+
+				document.getElementById("test").innerHTML = '网络好虚幻，什么都有不真实的感受。想去现实摸摸花，摸摸草，看看水。（隔离有感）';
+
+			}
+		</script>
+		<button class="four" onclick="editinput5()"></button>
+
+		<script>
+
+			function editinput5() {
+
+				document.getElementById("test").innerHTML = '上周日我去了公园，很开心，但上周五我干了什么我记不太清了。';
+
+			}
+
+		</script>
+		<button class="four" onclick="editinput6()"></button>
+
+		<script>
+
+			function editinput6() {
+
+				document.getElementById("test").innerHTML = '有些事情好像忘记就好了，就结束了，但是你往往不会忘记，你甚至不能够做到忘记你要忘记这件事。';
+
+			}
+
+		</script>
+		<button class="four" onclick="editinput7()"></button>
+
+		<script>
+
+			function editinput7() {
+
+				document.getElementById("test").innerHTML = '我好像在收集别人在收集什么，我又好像从来没有开始收集。';
+
+			}
+
+		</script>
+		<button class="four" onclick="editinput8()"></button>
+
+		<script>
+
+			function editinput8() {
+
+				document.getElementById("test").innerHTML = '我好像没有办法忘记我自己那些去忘记的内容，忘记本身是难以忘记的，往往都是被多次提起的，那忘记是不是就是有意义的，还是忘记的内容更加有意义呢。';
+
+			}
+
+		</script>
+
+		<button class="four" onclick="editinput9()"></button>
+
+		<script>
+
+			function editinput9() {
+
+				document.getElementById("test").innerHTML = '之前有提到说理解是否有门槛，现在正在思考理解是不是需要我们自己再去思考，理解本身可能并没有被理解，就像你所理解的事物可能是你去理解别人对一事物理解过后的产物，而这本身和理解原意又是否相符呢？是不是理解就是反复的思考和提问得到你所认为正确的结果。那你所理解的东西会不会又会被你自己所怀疑呢？';
+
+			}
+
+		</script>
+		<button class="four" onclick="editinput0()"></button>
+
+		<script>
+
+			function editinput0() {
+
+				document.getElementById("test").innerHTML = '遗忘好像是无色的，不是没有颜色，而是无色透明的颜色。';
+
+			}
+
+		</script>
+
+		<br>
+		<brbr><br><br><br><br><br><br><br><br><br>
+
+			<h1>纸船</h1>
+			<p> 泰戈尔
+				<br><br>
+				我每天把纸船一个个放在急流的溪中。<br><br>
+				我用大黑字写我的名字和我住的村名在纸船上。<br><br>
+				我希望住在异地的人会得到这纸船，知道我是谁。<br><br>
+				我把园中长的秀丽花载在我的小船上，<br><br>
+				希望这些黎明开的花能在夜里被平平安安地带到岸上。<br><br>
+				我投我的纸船到水里，仰望天空，<br><br>
+				看见小朵的云正在张着满鼓着风的白帆。<br><br>
+				我不知道天上有我的什么游伴把这些船放下来同我的船比赛！<br><br>
+				夜来了，我的脸埋在手臂里，<br><br>
+				梦见我的船在子夜的星光下缓缓地浮泛前去。<br><br>
+				睡仙坐在船里，带着满载着梦的篮子。
+			</p>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		
+			</center>
+
+</body>
+
 </html>
-
-
-
-
-
-
- 
